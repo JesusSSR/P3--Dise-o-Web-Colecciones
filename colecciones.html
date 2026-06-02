@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colecciones - Consultorio Médico Dorado</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero-banner">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="eyebrow">MIS COLECCIONES WEB</p>
+      <h1>Datos de Colecciones</h1>
+      <p>Hechale un vistazo a los datos de cada colección del consultorio Jaquez.</p>
+      <div class="form-actions">
+        <a href="Base.html" class="btn btn-secondary">Volver a la página principal</a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="section-card" id="about-colecciones">
+      <div class="section-header">
+        <h2>Colecciones consultorio Jaquez</h2>
+        <p>Esta página permite explorar las colecciones principales de la aplicación: <strong>medicos</strong>, <strong>pacientes</strong> y <strong>consultas</strong>. Aquí puedes revisar los registros almacenados en la base de datos para diagnóstico, administración y pruebas. Las tablas se cargan automáticamente al abrir la página.</p>
+      </div>
+    </section>
+    <nav class="main-nav">
+      <a href="#medicos">Médicos</a>
+      <a href="#pacientes">Pacientes</a>
+      <a href="#consultas">Consultas</a>
+    </nav>
+
+    <section class="section-card" id="medicos">
+      <div class="section-header">
+        <h2>Médicos</h2>
+        <p>Descripción: lista de especialistas, sus áreas y contacto.</p>
+      </div>
+      <div class="collection-summary">
+        <p>A continuación se muestra la tabla con los registros de médicos disponibles en la base de datos.</p>
+      </div>
+      <div id="medicosList" class="collection-data">Cargando médicos...</div>
+    </section>
+
+    <section class="section-card" id="pacientes">
+      <div class="section-header">
+        <h2>Pacientes</h2>
+        <p>Descripción: información básica y contacto de los pacientes registrados.</p>
+      </div>
+      <div class="collection-summary">
+        <p>A continuación se muestra la tabla con los registros de pacientes disponibles en la base de datos.</p>
+      </div>
+      <div id="pacientesList" class="collection-data">Cargando pacientes...</div>
+    </section>
+
+    <section class="section-card" id="consultas">
+      <div class="section-header">
+        <h2>Consultas</h2>
+        <p>Descripción: agenda y estado de las citas registradas.</p>
+      </div>
+      <div class="collection-summary">
+        <p>A continuación se muestra la tabla con los registros de consultas disponibles en la base de datos.</p>
+      </div>
+      <div id="consultasList" class="collection-data">Cargando consultas...</div>
+    </section>
+  </main>
+
+  <footer class="footer section-card">
+    <div>
+      <p>Consultorio Médico-Interfaz de las colecciones</p>
+      <p>Jaquez Camacho Jesus Ariel0854</p>
+    </div>
+  </footer>
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
